@@ -14,13 +14,42 @@ export default function PrepCVPage4() {
       </header>
 
       {/* OUTCOMES */}
-      <section className="px-10 py-6 bg-white mb-6">
-        <h2 className="text-[14pt] font-bold text-center mb-6">Outcomes Universities Care About</h2>
-        <div className="grid grid-cols-2 gap-6 max-w-4xl mx-auto">
-          <KPIBlock icon={<BarChart3 size={28} className="text-white" />} title="40%+" subtitle="Higher Placement Rates" color="from-green-400 to-green-600" />
-          <KPIBlock icon={<Building2 size={28} className="text-white" />} title="150+" subtitle="Companies Reached" color="from-blue-400 to-blue-600" />
-          <KPIBlock icon={<GraduationCap size={28} className="text-white" />} title="85%" subtitle="Student Preparedness" color="from-purple-400 to-purple-600" />
-          <KPIBlock icon={<FileText size={28} className="text-white" />} title="100%" subtitle="Validated Closures" color="from-pink-400 to-pink-600" />
+      <section className="px-6 py-4 bg-gradient-to-br from-gray-50 to-white mb-4">
+        <div className="max-w-3xl mx-auto">
+          <div className="text-center mb-4">
+            <h2 className="text-[14pt] font-bold text-gray-900 mb-2">Outcomes Universities Care About</h2>
+            <div className="w-12 h-0.5 bg-gradient-to-r from-blue-500 to-purple-500 mx-auto rounded-full"></div>
+          </div>
+          <div className="grid grid-cols-2 gap-4">
+            <KPIBlock 
+              icon={<BarChart3 size={24} className="text-white" />} 
+              title="40%+" 
+              subtitle="Higher Placement Rates" 
+              color="from-emerald-500 to-emerald-600" 
+              description="Proven improvement in student placement success"
+            />
+            <KPIBlock 
+              icon={<Building2 size={24} className="text-white" />} 
+              title="150+" 
+              subtitle="Companies Reached" 
+              color="from-blue-500 to-blue-600" 
+              description="Expanded corporate network and opportunities"
+            />
+            <KPIBlock 
+              icon={<GraduationCap size={24} className="text-white" />} 
+              title="85%" 
+              subtitle="Student Preparedness" 
+              color="from-purple-500 to-purple-600" 
+              description="Enhanced interview readiness and confidence"
+            />
+            <KPIBlock 
+              icon={<FileText size={24} className="text-white" />} 
+              title="100%" 
+              subtitle="Validated Closures" 
+              color="from-rose-500 to-rose-600" 
+              description="Verified successful placement outcomes"
+            />
+          </div>
         </div>
       </section>
 
@@ -64,14 +93,32 @@ export default function PrepCVPage4() {
   );
 }
 
-function KPIBlock({ icon, title, subtitle, color }: { icon: React.ReactNode; title: string; subtitle: string; color: string }) {
+function KPIBlock({ icon, title, subtitle, color, description }: { icon: React.ReactNode; title: string; subtitle: string; color: string; description?: string }) {
   return (
-    <div className="flex flex-col items-center justify-center p-4 rounded-lg shadow-md bg-white border">
-      <div className={`w-12 h-12 rounded-full flex items-center justify-center mb-2 bg-gradient-to-r ${color}`}>
-        {icon}
+    <div className="group relative bg-white rounded-lg shadow-md border border-gray-100 hover:shadow-lg transition-all duration-300 overflow-hidden">
+      {/* Background gradient overlay */}
+      <div className={`absolute inset-0 bg-gradient-to-br ${color} opacity-0 group-hover:opacity-5 transition-opacity duration-300`}></div>
+      
+      <div className="relative p-4 text-center">
+        {/* Icon container with enhanced styling */}
+        <div className={`w-12 h-12 rounded-xl flex items-center justify-center mb-3 mx-auto bg-gradient-to-br ${color} shadow-md group-hover:scale-105 transition-transform duration-300`}>
+          {icon}
+        </div>
+        
+        {/* Main metric */}
+        <h3 className="text-[16pt] font-bold text-gray-900 mb-1 group-hover:text-gray-700 transition-colors duration-300">{title}</h3>
+        
+        {/* Subtitle */}
+        <p className="text-[10pt] font-semibold text-gray-700 mb-2">{subtitle}</p>
+        
+        {/* Description */}
+        {description && (
+          <p className="text-[8pt] text-gray-600 leading-tight">{description}</p>
+        )}
       </div>
-      <h3 className="text-[14pt] font-extrabold text-gray-900">{title}</h3>
-      <p className="text-[9.5pt] text-gray-700 font-medium">{subtitle}</p>
+      
+      {/* Subtle border accent */}
+      <div className={`absolute bottom-0 left-0 right-0 h-0.5 bg-gradient-to-r ${color} opacity-60`}></div>
     </div>
   );
 }
