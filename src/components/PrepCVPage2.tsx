@@ -2,7 +2,7 @@ import { GraduationCap, Building2, BarChart3, Brain, XCircle, FileText } from "l
 
 export default function PrepCVPage2() {
   return (
-    <div className="h-[297mm] w-[210mm] mx-auto bg-white text-gray-900 font-sans px-10 py-8 flex flex-col gap-8">
+    <div className="h-[280mm] w-[210mm] mx-auto bg-white text-gray-900 font-sans px-10 py-8 mt-16 flex flex-col gap-8">
       {/* SECTION 1 – THE PROBLEM */}
       <section>
         <h1 className="text-[15pt] font-extrabold text-center mb-3 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">

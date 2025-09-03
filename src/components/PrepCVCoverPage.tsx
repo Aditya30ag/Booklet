@@ -2,13 +2,13 @@ import { QrCode, BarChart3, GraduationCap, Building2, Brain, FileText } from "lu
 
 export default function PrepCVCoverPage() {
   return (
-    <div className="h-[297mm] w-[210mm] mx-auto bg-white text-gray-900 font-sans px-14 py-12 flex flex-col justify-between">
+    <div className="h-[299mm] w-[210mm] mx-auto bg-white text-gray-900 font-sans px-14 py-4 flex flex-col justify-between">
       {/* TOP HEADER WITH LOGOS */}
       <header className="flex justify-between items-center mb-8 border-b pb-3">
         <img src="/Hirecentive - The Pitch Deck (August 18 2025) (11).png" alt="Hirecentive Logo" className="h-14" />
         <div className="flex gap-6">
-        <img src="/Hirecentive - The Pitch Deck (August 18 2025) (11).png" alt="Hirecentive Logo" className="h-14" />
-          <img src="/placeholder-startup-india.png" alt="Startup India Logo" className="h-10 bg-gray-200 rounded" />
+        
+          <img src="/startupindia.webp" alt="Startup India Logo" className="h-20 bg-gray-200 rounded" />
         </div>
       </header>
 
@@ -44,14 +44,14 @@ export default function PrepCVCoverPage() {
       </section>
 
       {/* CTA QR CODES + AUTHORITY */}
-      <footer className="mt-12 flex flex-col items-center gap-6">
+      <footer className="mt-4 flex flex-col items-center gap-6">
         <div className="flex justify-center gap-20">
           <QrBlock text="🎥 Watch PrepCV in 2 Minutes" />
           <QrBlock text="⚡ See PMS in Action" />
         </div>
         <div className="flex justify-center gap-6 mt-6">
-          <img src="/Hirecentive - The Pitch Deck (August 18 2025) (11).png" alt="Hirecentive Logo" className="h-10" />
-          <img src="/Hirecentive " alt="Hirecentive Logo" className="h-10" />
+          <img src="/Hirecentive - The Pitch Deck (August 18 2025) (11).png" alt="Hirecentive Logo" className="h-15" />
+          <img src="/startupindia.webp" alt="Startup India Logo" className="h-20" />
         </div>
         <p className="text-[9pt] text-gray-600 italic">Nationally recognized, globally competitive.</p>
         <div className="text-[9pt] text-gray-500 leading-snug text-center border-t pt-3 w-full">
