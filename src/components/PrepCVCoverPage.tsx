@@ -5,9 +5,9 @@ export default function PrepCVCoverPage() {
     <div className="h-[297mm] w-[210mm] mx-auto bg-white text-gray-900 font-sans px-14 py-12 flex flex-col justify-between">
       {/* TOP HEADER WITH LOGOS */}
       <header className="flex justify-between items-center mb-8 border-b pb-3">
-        <img src="/placeholder-logo.png" alt="PrepCV Logo" className="h-14 bg-gray-200 rounded" />
+        <img src="/Hirecentive - The Pitch Deck (August 18 2025) (11).png" alt="Hirecentive Logo" className="h-14" />
         <div className="flex gap-6">
-          <img src="/placeholder-meity.png" alt="MeitY Logo" className="h-10 bg-gray-200 rounded" />
+        <img src="/Hirecentive - The Pitch Deck (August 18 2025) (11).png" alt="Hirecentive Logo" className="h-14" />
           <img src="/placeholder-startup-india.png" alt="Startup India Logo" className="h-10 bg-gray-200 rounded" />
         </div>
       </header>
@@ -50,8 +50,8 @@ export default function PrepCVCoverPage() {
           <QrBlock text="⚡ See PMS in Action" />
         </div>
         <div className="flex justify-center gap-6 mt-6">
-          <img src="/placeholder-meity.png" alt="MeitY Logo" className="h-10 bg-gray-200 rounded" />
-          <img src="/placeholder-startup-india.png" alt="Startup India Logo" className="h-10 bg-gray-200 rounded" />
+          <img src="/Hirecentive - The Pitch Deck (August 18 2025) (11).png" alt="Hirecentive Logo" className="h-10" />
+          <img src="/Hirecentive " alt="Hirecentive Logo" className="h-10" />
         </div>
         <p className="text-[9pt] text-gray-600 italic">Nationally recognized, globally competitive.</p>
         <div className="text-[9pt] text-gray-500 leading-snug text-center border-t pt-3 w-full">
