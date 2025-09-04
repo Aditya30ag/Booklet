@@ -2,7 +2,7 @@ import { GraduationCap, Building2, BarChart3, Brain, XCircle, FileText } from "l
 
 export default function PrepCVPage2() {
   return (
-    <div className="h-[280mm] w-[210mm] mx-auto bg-white text-gray-900 font-sans px-10 py-8 mt-16 flex flex-col gap-8">
+    <div className="h-[380mm] w-[210mm] mx-auto bg-white text-gray-900 font-sans px-10 py-8 mt-16 flex flex-col gap-8">
       {/* SECTION 1 – THE PROBLEM */}
       <section>
         <h1 className="text-[15pt] font-extrabold text-center mb-3 bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
@@ -24,9 +24,11 @@ export default function PrepCVPage2() {
         <h2 className="text-[13.5pt] font-bold text-center mb-3">
           Your University&apos;s <span className="bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">Placement Operating System</span>
         </h2>
-        <div className="w-full h-36 bg-gray-200 rounded-md shadow-inner flex items-center justify-center text-gray-500 text-xs italic mb-3">
-          [Placeholder: PMS Dashboard Visual]
-        </div>
+        <img
+          src="/dashboard.png"
+          alt="PMS Dashboard"
+          className="w-full h-86 object-cover rounded-md border shadow-sm mb-3"
+        />
         <div className="grid grid-cols-2 gap-3 mb-3">
           <FeatureBlock icon={<GraduationCap size={16} className="text-purple-600" />} title="Student Journey Tracking" text="Track every student's path from application to closure." />
           <FeatureBlock icon={<Building2 size={16} className="text-blue-600" />} title="Corporate Dashboards" text="Manage job postings, recruiter engagement & POCs." />
@@ -43,9 +45,11 @@ export default function PrepCVPage2() {
         <h2 className="text-[13.5pt] font-bold text-center mb-3">
           Train Students with the Same AI Tools Companies Use
         </h2>
-        <div className="w-full h-36 bg-gray-200 rounded-md shadow-inner flex items-center justify-center text-gray-500 text-xs italic mb-3">
-          [Placeholder: AI Interview Interface + Coding IDE]
-        </div>
+        <img
+          src="/students.png"
+          alt="AI Interview Interface and Coding IDE with students"
+          className="w-full h-86 object-cover rounded-md border shadow-sm mb-3"
+        />
         <div className="grid grid-cols-3 gap-2 mb-3">
           <FeatureBlock icon={<Brain size={16} className="text-purple-600" />} title="Adaptive AI Interviews" text="Real-time adaptive interviews." />
           <FeatureBlock icon={<FileText size={16} className="text-blue-600" />} title="Integrated Coding IDE" text="Python, Java, JS, and C++ supported." />

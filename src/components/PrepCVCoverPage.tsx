@@ -4,16 +4,15 @@ export default function PrepCVCoverPage() {
   return (
     <div className="h-[299mm] w-[210mm] mx-auto bg-white text-gray-900 font-sans px-14 py-4 flex flex-col justify-between">
       {/* TOP HEADER WITH LOGOS */}
-      <header className="flex justify-between items-center mb-8 border-b pb-3">
+      <header className="flex justify-between items-center mb-4 border-b pb-3">
         <img src="/Hirecentive - The Pitch Deck (August 18 2025) (11).png" alt="Hirecentive Logo" className="h-14" />
         <div className="flex gap-6">
-        
           <img src="/startupindia.webp" alt="Startup India Logo" className="h-20 bg-gray-200 rounded" />
         </div>
       </header>
 
       {/* HERO SECTION */}
-      <section className="text-center mb-10">
+      <section className="text-center mb-4">
         <h1 className="text-[21pt] font-extrabold leading-snug bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
           Reinventing Campus Placements with AI-Powered Management & Training
         </h1>
@@ -23,14 +22,16 @@ export default function PrepCVCoverPage() {
       </section>
 
       {/* VISUAL HERO (SINGLE PLACEHOLDER) */}
-      <section className="mb-10">
-        <div className="w-full h-56 bg-gray-200 rounded-xl shadow-md border flex items-center justify-center text-gray-500 text-sm italic">
-          [Placeholder: PMS Dashboard + AI Interviewer]
-        </div>
+      <section className="mb-4">
+        <img
+          src="/homepage.png"
+          alt="PMS Dashboard and AI Interviewer"
+          className="w-full h-88 object-cover rounded-xl shadow-md border"
+        />
       </section>
 
       {/* KEY HIGHLIGHTS */}
-      <section className="mb-10">
+      <section className="mb-4">
         <h2 className="text-center text-[13pt] font-bold text-gray-900 mb-5">
           Key Highlights
         </h2>
@@ -44,12 +45,12 @@ export default function PrepCVCoverPage() {
       </section>
 
       {/* CTA QR CODES + AUTHORITY */}
-      <footer className="mt-4 flex flex-col items-center gap-6">
+      <footer className="flex flex-col items-center gap-6">
         <div className="flex justify-center gap-20">
           <QrBlock text="🎥 Watch PrepCV in 2 Minutes" />
           <QrBlock text="⚡ See PMS in Action" />
         </div>
-        <div className="flex justify-center gap-6 mt-6">
+        <div className="flex justify-center gap-6">
           <img src="/Hirecentive - The Pitch Deck (August 18 2025) (11).png" alt="Hirecentive Logo" className="h-15" />
           <img src="/startupindia.webp" alt="Startup India Logo" className="h-20" />
         </div>
